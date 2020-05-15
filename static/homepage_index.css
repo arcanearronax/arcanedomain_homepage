@@ -1,0 +1,149 @@
+/* Homepage Only Variables */
+:root {
+  --main-max-width: 980px;
+}
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+
+  /* need to add padding on small screens */
+}
+
+/*
+ *  Formatting for all elements
+ *
+*/
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+main {
+  margin-left: 120px;
+}
+
+p {
+  color: var(--alt-text-color);
+}
+
+h1 {
+  font-size: 64px !important;
+}
+
+figure {
+
+}
+
+figcaption {
+  color: var(--alt-text-color);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: var(--main-max-width);
+}
+
+article {
+  max-width: var(--main-max-width);
+  margin: 0 auto;
+}
+
+section {
+  max-width: var(--main-max-width);
+  margin: 0 auto;
+}
+
+/*
+ *  Formatting used throughout the page
+ *
+*/
+
+.vert-space {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.center-text {
+  text-align: center !important;
+}
+
+.large-text {
+  font-size: 36px !important;
+}
+
+.large-pad {
+  padding: 12px 24px !important;
+}
+
+/*
+ *  Formatting for the sidebar
+ *
+*/
+
+/* Set the width of the sidebar to 100px */
+.sidebar {
+  width: 100px;
+  background-color: var(--alt-bg-color);
+  font-size: 12px !important;
+  height: 100%;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+}
+
+p.sidebar-title {
+  color: var(--main-text-color);
+}
+
+.sidebar-link {
+  color: var(--main-text-color);
+  text-align: inherit !important;
+  white-space: normal !important;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sidebar-link:hover {
+  background-color: var(--main-bg-color) !important;
+  color: var(--main-text-color);
+}
+
+.sidebar-icon {
+  color: var(--main-text-color);
+  margin: 0px;
+}
+
+/*
+ *  Formatting for site display
+ *
+*/
+
+.site {
+  margin: 16px 0px;
+}
+
+.site-container {
+  margin: 0px auto 32px auto;
+}
+
+.display {
+  color: var(--alt-bg-color);
+  background-color: var(--main-text-color);
+  padding: 16px 0px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: inherit;
+  margin-right: inherit;
+  text-align: center;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display-entry {
+  margin: inherit;
+}
