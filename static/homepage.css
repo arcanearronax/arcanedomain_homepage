@@ -54,6 +54,19 @@ section {
   margin: 0 auto;
 }
 
+hr {
+  opacity: 0.60;
+  width: 200px;
+}
+
+footer {
+  font-size: 18px;
+  color: var(--alt-text-color);
+  max-width: var(--main-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*
  *  Formatting used throughout the page
  *
@@ -66,6 +79,14 @@ section {
 
 .center-text {
   text-align: center !important;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.medium-text {
+  font-size: 24px !important;
 }
 
 .large-text {
@@ -81,7 +102,6 @@ section {
  *
 */
 
-/* Set the width of the sidebar to 100px */
 .sidebar {
   width: 100px;
   background-color: var(--alt-bg-color);
@@ -124,11 +144,33 @@ p.sidebar-title {
 
 .site {
   margin: 16px 0px;
+  letter-spacing: 4px;
 }
 
 .site-container {
   margin: 0px auto 32px auto;
+  /* Set "my-sec-counter" to 0 */
+  counter-reset: bar-size;
 }
+
+#sites {
+  text-align: justify !important;
+}
+
+.light-bar {
+  height: 28px;
+  background-color: var(--main-text-color);
+}
+
+.dark-bar {
+  height: inherit;
+  background-color: var(--alt-text-color);
+}
+
+/*
+ *  Formatting for the item display
+ *
+*/
 
 .display {
   color: var(--alt-bg-color);
@@ -136,9 +178,12 @@ p.sidebar-title {
   padding: 16px 0px;
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-left: inherit;
-  margin-right: inherit;
+  margin-left: 0;
+  margin-right: 0;
   text-align: center;
+}
+
+.display::after {
   content: "";
   display: table;
   clear: both;
@@ -146,4 +191,27 @@ p.sidebar-title {
 
 .display-entry {
   margin: inherit;
+  width: 25%;
+  float: left;
+}
+
+/*
+ *  Formatting used for the About section
+ *
+*/
+
+.about-icon {
+  color: var(--main-text-color);
+  margin-right: 16px;
+  width: 1.3em;
+  text-align: center;
+}
+
+/*
+ *  Formatting for the footer
+ *
+*/
+
+.footer-item {
+  margin: auto;
 }
